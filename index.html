@@ -7,49 +7,84 @@
   </head>
 
   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,700&family=Zen+Dots&display=swap");
+
     @media (max-width: 800px) {
       body {
         font-size: 14px;
       }
     }
 
-    body{
-      text-align: center;
+    #nav-bar {
+      position: fixed;
+      top: 0;
+      width: 100%;
     }
 
-    #video{
+    body {
+      text-align: center;
+      background-color: #eee;
+    }
+
+    #video {
       margin-top: 250px;
     }
 
-    #submit{
+    #submit {
       background-color: #f1c40f;
       font-weight: bold;
       padding: 10px 10px 10px 20px;
       margin-top: 20px;
     }
 
-    #email{
+    #email {
       padding: 20px;
     }
 
     .flex-container {
-  display: flex;
-  justify-content:flex-end;
-}
+      display: flex;
+      justify-content: flex-end;
+    }
 
-.flex-container > a {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-  
-  text-decoration: none;
-}
+    .flex-container > a {
+      background-color: #f1f1f1;
+      margin: 10px;
+      padding: 20px;
+      font-size: 30px;
 
-#header-img{
-  width: 300px;
-}
+      text-decoration: none;
+    }
 
+    #header-img {
+      width: 300px;
+    }
+
+    #main-div,
+    .flexbox-pricing-boxes {
+      text-align: left;
+      margin-left: 25%;
+      font-family: "Lato";
+    }
+
+    .flexbox-pricing-boxes {
+      display: flex;
+      border: 2px solid black;
+      margin: 5px;
+      text-align: center;
+      width: 200px;
+      height: 250px;
+    }
+
+    #flexbox-pricing {
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+    }
+
+    .btn {
+      height: 30px;
+      width: 60px;
+    }
   </style>
 
   <body>
@@ -66,9 +101,10 @@
         alt="image of the logo"
         id="header-img"
       />
-
-      <h1>Handcrafted, home-made masterpieces</h1>
     </header>
+
+    <h1>Handcrafted, home-made masterpieces</h1>
+
     <form id="form" action="https://www.freecodecamp.com/email-submit">
       <input
         name="email"
@@ -76,24 +112,34 @@
         type="email"
         placeholder="Enter your email address"
       />
-      <br>
-      <input id="submit" type="submit" value="GET STARTED"/>
+      <br />
+      <input id="submit" type="submit" value="GET STARTED" />
     </form>
 
+    <div id="main-div">
+      <div>
+        <h2>Premium Materials</h2>
+        <p>
+          Our trombones use the shiniest brass which is sourced locally. This
+          will increase the longevity of your purchase.
+        </p>
+      </div>
 
-    <div>
-      <h2>Premium Materials</h2>
-      <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
-    </div>
+      <div>
+        <h2>Fast Shipping</h2>
+        <p>
+          We make sure you recieve your trombone as soon as we have finished
+          making it. We also provide free returns if you are not satisfied.
+        </p>
+      </div>
 
-    <div>
-      <h2>Fast Shipping</h2>
-      <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
-    </div>
-
-    <div>
-      <h2>Quality Assurance</h2>
-      <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+      <div>
+        <h2>Quality Assurance</h2>
+        <p>
+          For every purchase you make, we will ensure there are no damages or
+          faults and we will check and test the pitch of your instrument.
+        </p>
+      </div>
     </div>
 
     <iframe
@@ -106,6 +152,20 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
     ></iframe>
+
+    <section id="flexbox-pricing">
+      <div class="flexbox-pricing-boxes">
+        TENOR TROMBONE
+        <button type="submit" class="btn">SELECT</button>
+      </div>
+      <div class="flexbox-pricing-boxes">
+        BASS TROMBONE
+        <button type="submit" class="btn">SELECT</button>
+      </div>
+      <div class="flexbox-pricing-boxes">
+        VALVE TROMBONE <button type="submit" class="btn">SELECT</button>
+      </div>
+    </section>
 
     <script src="js/index.js"></script>
   </body>
