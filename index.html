@@ -12,13 +12,51 @@
         font-size: 14px;
       }
     }
+
+    body{
+      text-align: center;
+    }
+
+    #video{
+      margin-top: 250px;
+    }
+
+    #submit{
+      background-color: #f1c40f;
+      font-weight: bold;
+      padding: 10px 10px 10px 20px;
+      margin-top: 20px;
+    }
+
+    #email{
+      padding: 20px;
+    }
+
+    .flex-container {
+  display: flex;
+  justify-content:flex-end;
+}
+
+.flex-container > a {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  
+  text-decoration: none;
+}
+
+#header-img{
+  width: 300px;
+}
+
   </style>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <header id="header">
-      <nav id="nav-bar">
+      <nav id="nav-bar" class="flex-container">
         <a href="#video" class="nav-link">Features</a>
         <a href="#video" class="nav-link">How It Works</a>
         <a href="#video" class="nav-link">Pricing</a>
@@ -38,8 +76,25 @@
         type="email"
         placeholder="Enter your email address"
       />
-      <input id="submit" type="submit" />
+      <br>
+      <input id="submit" type="submit" value="GET STARTED"/>
     </form>
+
+
+    <div>
+      <h2>Premium Materials</h2>
+      <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+    </div>
+
+    <div>
+      <h2>Fast Shipping</h2>
+      <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+    </div>
+
+    <div>
+      <h2>Quality Assurance</h2>
+      <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+    </div>
 
     <iframe
       id="video"
