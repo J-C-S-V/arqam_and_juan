@@ -6,15 +6,52 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
+  <style>
+    @media (max-width: 800px) {
+      body {
+        font-size: 14px;
+      }
+    }
+  </style>
+
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <header id="header">
-      <img src="images/logo.png" alt="image of the logo" id="header-img">
-      <h1>Handcrafted, home-made masterpieces</h1>
+      <nav id="nav-bar">
+        <a href="#video" class="nav-link">Features</a>
+        <a href="#video" class="nav-link">How It Works</a>
+        <a href="#video" class="nav-link">Pricing</a>
+      </nav>
+      <img
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+        alt="image of the logo"
+        id="header-img"
+      />
 
+      <h1>Handcrafted, home-made masterpieces</h1>
     </header>
-   
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+      />
+      <input id="submit" type="submit" />
+    </form>
+
+    <iframe
+      id="video"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/tRZGeaHPoaw"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
     <script src="js/index.js"></script>
   </body>
 </html>
